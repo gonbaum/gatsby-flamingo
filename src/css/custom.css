@@ -1,0 +1,41 @@
+body {
+    margin:0px;
+}
+
+.flexThisBox {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    background-color: rgb(59,59,59);
+    color: whitesmoke;
+    height: 10vh;
+    padding: 1em;
+}
+
+a {
+    color:whitesmoke;
+}
+
+.full-height{
+    min-height: 100vh;
+}
+
+.two-thirds-height {
+    min-height: 77vh;
+}
+
+.mission{
+    height: 30rem;
+}
+
+.kale{
+    background-color: rgb(97, 119, 79);
+    color: whitesmoke;
+}

@@ -10,7 +10,10 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import "./layout.css"
+import Footer from "./footer"
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../css/custom.css'
+import { Container } from 'react-bootstrap'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -25,24 +28,24 @@ const Layout = ({ children }) => {
 
   return (
     <>
+    <div className="flexThisBox">
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <main>
+        <div>{ children }</div>
+      </main>
+      <Footer siteTitle={data.site.siteMetadata.title} />
+    </div>
     </>
   )
 }
+
+  /*<main>
+        <div class="d-flex flex-column">
+          <div class="p-2 bg-info">Flex item 1</div>
+          <div class="p-2 bg-warning">Flex item 2</div>
+          <div class="p-2 bg-primary">Flex item 3</div>
+        </div>
+      </main>*/
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
