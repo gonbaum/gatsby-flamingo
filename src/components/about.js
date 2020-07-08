@@ -24,12 +24,13 @@ const About = props => (
                 style={{ minHeight: "22rem" }}
                 src={team1}
                 alt="wrapkit"
-                class="img-fluid"
+                class="img-fluid rounded-circle"
               />
             </div>
-            <div class="col-md-12">
+            {/*Text under image*/}
+            <div class="col-md-12 text-center">
               <div class="pt-2">
-                <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+                <h5 class="mt-4 font-weight-bold mb-0">Michael Doe</h5>
                 <h6 class="subtitle">Property Specialist</h6>
                 <p>
                   You can relay on our amazing features list and also our
@@ -69,12 +70,13 @@ const About = props => (
                 style={{ minHeight: "22rem" }}
                 src={team2}
                 alt="wrapkit"
-                class="img-fluid"
+                class="img-fluid rounded-circle"
               />
             </div>
-            <div class="col-md-12">
+            {/*Text under image*/}
+            <div class="col-md-12 text-center">
               <div class="pt-2">
-                <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+                <h5 class="mt-4 font-weight-bold mb-0">Michael Doe</h5>
                 <h6 class="subtitle">Property Specialist</h6>
                 <p>
                   You can relay on our amazing features list and also our
@@ -114,12 +116,13 @@ const About = props => (
                 style={{ minHeight: "22rem" }}
                 src={team3}
                 alt="wrapkit"
-                class="img-fluid"
+                class="img-fluid rounded-circle"
               />
             </div>
-            <div class="col-md-12">
+            {/*Text under image*/}
+            <div class="col-md-12 text-center">
               <div class="pt-2">
-                <h5 class="mt-4 font-weight-medium mb-0">Michael Doe</h5>
+                <h5 class="mt-4 font-weight-bold mb-0">Michael Doe</h5>
                 <h6 class="subtitle">Property Specialist</h6>
                 <p>
                   You can relay on our amazing features list and also our

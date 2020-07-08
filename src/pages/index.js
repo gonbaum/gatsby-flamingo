@@ -17,7 +17,7 @@ const IndexPage = () => (
           <About />
           <Events />
           <Offsites />
-          <div class="p-5 bg-primary " style={{height: '77vh'}}>Flex item 3</div>
+          <div class="p-5 " style={{height: '77vh'}}>Flex item 3</div>
         </div>
   </Layout>
 )

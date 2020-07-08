@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 body {
-    margin:0px;
+    margin: 0px;
+    font-size: 1.1rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, ul {
+    font-family: 'Courier Prime', monospace;
 }
 
 .flexThisBox {
@@ -32,10 +39,21 @@ a {
 }
 
 .mission{
-    height: 30rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 10px;
+}
+
+.kale-transparent{
+    background-color: rgb(97, 119, 79, 0.6);
+    color: whitesmoke;
 }
 
 .kale{
     background-color: rgb(97, 119, 79);
     color: whitesmoke;
+}
+
+.violet{
+    background-color: rgb(191, 155, 222, 0.6);
 }

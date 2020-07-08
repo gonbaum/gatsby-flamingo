@@ -1,13 +1,13 @@
 import React from "react"
 
 const Offsites = props => (
-  <div class="p-5 kale d-flex align-items-center two-thirds-height">
+  <div class="p-5 kale d-flex align-items-center full-height">
     <div class="container-fluid text-center">
       <h1 style={{paddingBottom: '5rem'}}>Offsites</h1>
-      <div class="row justify-content-center">
-        <div class="col-md-3 mb-5 d-flex flex-column text-justify">
-          <h2 class="text-center">Offsite 1</h2>  
-          <p>
+      <div class="row justify-content-around">
+        <div class="col-md-3 mb-5 d-flex flex-column  text-justify">
+          <h2 class="text-center mb-4">Offsite 1</h2>  
+          <p class="">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -18,8 +18,8 @@ const Offsites = props => (
           </p>
         </div>
         <div class="col-md-3 mb-5 d-flex flex-column text-justify">
-          <h2 class="text-center">Offsite 2</h2>
-          <p>
+          <h2 class="text-center mb-4">Offsite 2</h2>
+          <p class="">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -29,9 +29,9 @@ const Offsites = props => (
             culpa qui officia deserunt mollit anim id est laborum."
           </p>
         </div>
-        <div class="col-md-3 mb-5 d-flex flex-column text-justify">
-          <h2 class="text-center">Offsite 3</h2>
-          <p>
+        <div class="col-md-3 col-md-offset-2 mb-5 d-flex flex-column text-justify">
+          <h2 class="text-center mb-4">Offsite 3</h2>
+          <p class="">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
