@@ -3,7 +3,7 @@ import Image from "../components/image"
 import Background from "../images/mission/background.png"
 
 const missionSection = props => (
-  <div class="p-5 two-thirds-height d-flex align-items-center" style={{backgroundImage:`url(${Background})`}}>
+  <div id="mission" class="p-5 two-thirds-height d-flex align-items-center" style={{backgroundImage:`url(${Background})`}}>
     <div class="container kale-transparent mission text-center">
       <div class="row justify-content-center">
         <div class="col-9">

@@ -1,7 +1,7 @@
 import React from "react"
 
 const Offsites = props => (
-  <div class="p-5 kale d-flex align-items-center full-height">
+  <div id="offsites" class="p-5 kale d-flex align-items-center full-height">
     <div class="container-fluid text-center">
       <h1 style={{paddingBottom: '5rem'}}>Offsites</h1>
       <div class="row justify-content-around">

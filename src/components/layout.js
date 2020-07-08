@@ -26,6 +26,13 @@ const Layout = ({ children }) => {
     }
   `)
 
+  // Add smooth scrolling:
+
+  if (typeof window !== "undefined") {
+    // eslint-disable-next-line global-require
+    require("smooth-scroll")('a[href*="#"]')
+  }
+  
   return (
     <>
     <div className="flexThisBox">

@@ -4,7 +4,7 @@ import team2 from '../images/about/team2.png'
 import team3 from '../images/about/team3.png'
 
 const About = props => (
-  <div class="p-5 d-flex align-items-center full-height">
+  <div id="about" class="p-5 d-flex align-items-center full-height">
     <div class="container">
       <div class="row justify-content-center mb-4">
         <div class="col-md-7 text-center">
