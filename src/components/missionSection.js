@@ -1,12 +1,11 @@
 import React from "react"
-import Image from "../components/image"
 import Background from "../images/mission/background.png"
 
 const missionSection = props => (
-  <div id="mission" class="p-5 two-thirds-height d-flex align-items-center" style={{backgroundImage:`url(${Background})`}}>
-    <div class="container kale-transparent mission text-center">
+  <div id="mission" class="p-md-5 two-thirds-height d-flex align-items-center" style={{backgroundImage:`url(${Background})`}}>
+    <div class=" kale-transparent mission text-center">
       <div class="row justify-content-center">
-        <div class="col-9">
+        <div class="col-md-9">
           <h1>What's Flamingo Kollektive</h1>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

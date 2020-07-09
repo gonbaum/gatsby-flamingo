@@ -16,15 +16,15 @@ const About = props => (
           </h6>
         </div>
       </div>
-      <div class="row">
+      <div class="row ">
         <div class="col-lg-4 mb-4">
-          <div class="row">
-            <div class="col-md-12">
+          <div class="row ">
+            <div class="col-md-12 justify-content-center text-center">
               <img
-                style={{ minHeight: "22rem" }}
+                style={{ minHeight: "" }}
                 src={team1}
                 alt="wrapkit"
-                class="img-fluid rounded-circle"
+                class="img-fluid rounded-circle shadow "
               />
             </div>
             {/*Text under image*/}
@@ -32,11 +32,11 @@ const About = props => (
               <div class="pt-2">
                 <h5 class="mt-4 font-weight-bold mb-0">Michael Doe</h5>
                 <h6 class="subtitle">Property Specialist</h6>
-                <p>
+                <p class="team4">
                   You can relay on our amazing features list and also our
                   customer services will be great experience.
                 </p>
-                <ul class="list-inline">
+                {/*<ul class="list-inline">
                   <li class="list-inline-item">
                     <a href="#" class="text-decoration-none d-block px-1">
                       <i class="icon-social-facebook"></i>
@@ -57,7 +57,7 @@ const About = props => (
                       <i class="icon-social-behance"></i>
                     </a>
                   </li>
-                </ul>
+                </ul>*/}
               </div>
             </div>
           </div>
@@ -65,12 +65,12 @@ const About = props => (
 
         <div class="col-lg-4 mb-4">
           <div class="row">
-            <div class="col-md-12 pro-pic">
+            <div class="col-md-12 justify-content-center text-center">
               <img
-                style={{ minHeight: "22rem" }}
+                style={{ minHeight: "" }}
                 src={team2}
                 alt="wrapkit"
-                class="img-fluid rounded-circle"
+                class="img-fluid rounded-circle shadow"
               />
             </div>
             {/*Text under image*/}
@@ -78,7 +78,7 @@ const About = props => (
               <div class="pt-2">
                 <h5 class="mt-4 font-weight-bold mb-0">Michael Doe</h5>
                 <h6 class="subtitle">Property Specialist</h6>
-                <p>
+                <p class="team4">
                   You can relay on our amazing features list and also our
                   customer services will be great experience.
                 </p>
@@ -111,12 +111,12 @@ const About = props => (
 
         <div class="col-lg-4 mb-4">
           <div class="row">
-            <div class="col-md-12 pro-pic">
+            <div class="col-md-12 justify-content-center text-center">
               <img
-                style={{ minHeight: "22rem" }}
+                style={{ minHeight: "" }}
                 src={team3}
                 alt="wrapkit"
-                class="img-fluid rounded-circle"
+                class="img-fluid rounded-circle shadow"
               />
             </div>
             {/*Text under image*/}
@@ -124,7 +124,7 @@ const About = props => (
               <div class="pt-2">
                 <h5 class="mt-4 font-weight-bold mb-0">Michael Doe</h5>
                 <h6 class="subtitle">Property Specialist</h6>
-                <p>
+                <p class="team4">
                   You can relay on our amazing features list and also our
                   customer services will be great experience.
                 </p>

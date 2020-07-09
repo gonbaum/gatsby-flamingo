@@ -1,16 +1,26 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Container, Navbar, Nav } from "react-bootstrap"
+import { Container } from "react-bootstrap"
+import Instagram from '../assets/svg/instagram.svg'
 
 const Footer = ({ siteTitle }) => (
-    <footer className="bg-dark">
+    <footer className="black" >
     <Container>
-            © {new Date().getFullYear()},
-            {` `}
-            <a href="/">{siteTitle}</a>
+    <div class="d-flex flex-row justify-content-between">
+      
+            
+            <a href="/">© {new Date().getFullYear()},
+            {` `}{siteTitle}</a>
+      
+      
+            <a href="/"><img src={Instagram}  alt="" class="ig-icon" style={{maxHeight:"2.5rem"}}></img></a>
+            </div>
+      
     </Container>
     </footer>
+
+
+
 )
 
 Footer.propTypes = {

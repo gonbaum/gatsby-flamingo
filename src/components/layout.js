@@ -13,7 +13,6 @@ import Header from "./header"
 import Footer from "./footer"
 import 'bootstrap/dist/css/bootstrap.min.css'
 import '../css/custom.css'
-import { Container } from 'react-bootstrap'
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -32,7 +31,7 @@ const Layout = ({ children }) => {
     // eslint-disable-next-line global-require
     require("smooth-scroll")('a[href*="#"]')
   }
-  
+
   return (
     <>
     <div className="flexThisBox">

@@ -1,12 +1,22 @@
 import React from "react"
+import OffsiteImg from "../images/offsites/offsite.png"
 
 const Offsites = props => (
-  <div id="offsites" class="p-5 kale d-flex align-items-center full-height">
+  <div
+    id="offsites"
+    class="p-5 kale-background d-flex align-items-center full-height"
+  >
     <div class="container-fluid text-center">
-      <h1 style={{paddingBottom: '5rem'}}>Offsites</h1>
+      <h1 style={{ paddingBottom: "2rem" }}>Offsites</h1>
+      <img
+        class="mb-5 img-fluid rounded shadow-sm"
+        style={{ maxHeight: "15rem"}}
+        src={OffsiteImg}
+        alt="offsite"
+      />
       <div class="row justify-content-around">
         <div class="col-md-3 mb-5 d-flex flex-column  text-justify">
-          <h2 class="text-center mb-4">Offsite 1</h2>  
+          <h2 class="text-center mb-4">Offsite 1</h2>
           <p class="">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

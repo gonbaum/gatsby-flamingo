@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import { Container, Navbar, Nav } from "react-bootstrap"
@@ -6,25 +5,25 @@ import ScrollToLink from "./ScrollToLink"
 
 /* Use Link component from Gatsby combined with bootstrap classes nav-link and active to leverage activeClassName prop of the element that Nav.Link from bootstrap doesn't have*/
 const Header = ({ siteTitle }) => (
-  <header>
+  <header className="koTtll shadow-sm">
     <Container>
       <Navbar expand="md">
         <Navbar.Brand href="/">
           <img
             src="https://flamingo-pflegeservice.de/wp-content/uploads/2019/07/FLamingo-Logo-Neu.png"
             alt=""
-            width="100"
-            height="100"
+            width="65rem"
+            height="65rem"
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarResponsive" />
         <Navbar.Collapse id="navbarResponsive">
-          <Nav as="ul" className="ml-auto">
+          <Nav as="ul" className="ml-auto ">
             <Nav.Item as="li">
               <ScrollToLink
-                to="offsites"
-                title="Offsites"
+                to="mission"
+                title="Mission"
                 classes="nav-link"
                 active="active"
               />
@@ -39,8 +38,24 @@ const Header = ({ siteTitle }) => (
             </Nav.Item>
             <Nav.Item as="li">
               <ScrollToLink
-                to="mission"
-                title="Mission"
+                to="events"
+                title="Events"
+                classes="nav-link"
+                active="active"
+              />
+            </Nav.Item>
+            <Nav.Item as="li">
+              <ScrollToLink
+                to="offsites"
+                title="Offsites"
+                classes="nav-link"
+                active="active"
+              />
+            </Nav.Item>
+            <Nav.Item as="li">
+              <ScrollToLink
+                to="baskets"
+                title="Baskets"
                 classes="nav-link"
                 active="active"
               />
