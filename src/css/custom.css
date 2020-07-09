@@ -59,8 +59,8 @@ main {
 footer {
   background-color: rgb(59, 59, 59);
   color: whitesmoke;
-  height: 10vh;
-  padding: 1em;
+  padding: 1rem;
+  height: 5rem;
 }
 
 a {
