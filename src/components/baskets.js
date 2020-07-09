@@ -15,7 +15,7 @@ const Baskets = (props) => (
                 alt="wrapkit"
               />
         </div>
-        <div class="col-9 ">
+        <div class="col-md-9 ">
         <ListGroup class="shadow-sm">
             <ListGroup.Item class="mb-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua."</ListGroup.Item>

@@ -5,7 +5,7 @@ const missionSection = props => (
   <div id="mission" class="p-md-5 two-thirds-height d-flex align-items-center" style={{backgroundImage:`url(${Background})`}}>
     <div class=" kale-transparent mission text-center">
       <div class="row justify-content-center">
-        <div class="col-md-9">
+        <div class="col-md-9 p-5">
           <h1>What's Flamingo Kollektive</h1>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

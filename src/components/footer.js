@@ -6,7 +6,7 @@ import Instagram from '../assets/svg/instagram.svg'
 const Footer = ({ siteTitle }) => (
     <footer className="black" >
     <Container>
-    <div class="d-flex flex-row justify-content-between">
+    <div class="d-flex flex-row justify-content-between align-items-center">
       
             
             <a href="/">© {new Date().getFullYear()},

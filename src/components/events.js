@@ -7,7 +7,7 @@ const Events = props => (
       <div class="row justify-content-center">
         <div class="col-md-9">
           <h1 class="mb-5">Events</h1>
-          <p class="text-justify">
+          <p class="text-justify mb-5">
             "At vero eos et accusamus et iusto odio dignissimos ducimus qui
             blanditiis praesentium voluptatum deleniti atque corrupti quos
             dolores et quas molestias excepturi sint occaecati cupiditate non

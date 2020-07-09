@@ -18,8 +18,8 @@ const Contact = props => (
         <div class="col-md-3 mb-5 d-flex flex-column align-items-center text-justify">
         <img class="mb-4" style={{maxHeight: '3em'}} src={Home}></img>
           <h2 class="text-center mb-4">Address</h2>
-          <span>
-            David Mathews
+          <span style={{paddingLeft:"2rem"}}>
+              David Mathews
             <br />
             1011 Malesuada Road
             <br />
