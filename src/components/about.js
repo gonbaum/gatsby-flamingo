@@ -82,7 +82,7 @@ const About = props => (
                   You can relay on our amazing features list and also our
                   customer services will be great experience.
                 </p>
-                <ul class="list-inline">
+                {/*<ul class="list-inline">
                   <li class="list-inline-item">
                     <a href="#" class="text-decoration-none d-block px-1">
                       <i class="icon-social-facebook"></i>
@@ -103,7 +103,7 @@ const About = props => (
                       <i class="icon-social-behance"></i>
                     </a>
                   </li>
-                </ul>
+              </ul>*/}
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ const About = props => (
                   You can relay on our amazing features list and also our
                   customer services will be great experience.
                 </p>
-                <ul class="list-inline">
+                {/*<ul class="list-inline">
                   <li class="list-inline-item">
                     <a href="#" class="text-decoration-none d-block px-1">
                       <i class="icon-social-facebook"></i>
@@ -149,7 +149,7 @@ const About = props => (
                       <i class="icon-social-behance"></i>
                     </a>
                   </li>
-                </ul>
+            </ul>*/}
               </div>
             </div>
           </div>

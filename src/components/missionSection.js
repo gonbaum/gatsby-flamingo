@@ -3,7 +3,7 @@ import Background from "../images/mission/background.png"
 
 const missionSection = props => (
   <div id="mission" class="p-md-5 two-thirds-height d-flex align-items-center" style={{backgroundImage:`url(${Background})`}}>
-    <div class=" kale-transparent mission text-center">
+    <div class="container-fluid kale-transparent mission text-center">
       <div class="row justify-content-center">
         <div class="col-md-9 p-5">
           <h1>What's Flamingo Kollektive</h1>
