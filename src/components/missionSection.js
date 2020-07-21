@@ -1,32 +1,46 @@
 import React from "react"
-import Background from "../images/mission/background.png"
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from "gatsby-image"
+import BackgroundImage from 'gatsby-background-image'
 
-const missionSection = props => (
-  <div id="mission" class="p-md-5 two-thirds-height d-flex align-items-center" style={{backgroundImage:`url(${Background})`}}>
-    <div class="container-fluid kale-transparent mission text-center">
-      <div class="row justify-content-center">
-        <div class="col-md-9 p-5">
-          <h1>What's Flamingo Kollektive</h1>
-          <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."
-          </p>
-          <p><b>Now go build something great.</b></p>
-        </div>
+const MissionSection = props => {
 
-      </div>
-    </div>
-  </div>
-)
+  const data = useStaticQuery(graphql`
+  query {
+    missionbg: file(relativePath: {eq: "background.jpg"}) {
+      childImageSharp {
+          fluid(maxWidth: 1920) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`)
 
-/* Image with componet:
-          <div class="center-block" style={{ maxWidth: `300px`}}>
-            <Image />
+  return (
+
+    <BackgroundImage fluid={data.missionbg.childImageSharp.fluid} backgroundColor={`#040e18`}>
+    <div id="mission" className="p-3 d-flex align-items-center two-thirds-height ">
+      <div className="container-sm text-center white-container mission">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+            <div className="text-center">
+            <h1 className="mb-0">Flämingo</h1>
+            <h3>Kollektiv</h3>
+            <hr className="green-divider mt-3 mb-md-4 "></hr>
+            </div>
+            <p className="p-1">
+              We are a collective of small organic farms in Teltow-Fläming, Brandenburg. We produce vegetables free of chemicals and pesticides using permaculture principles. We make homemade products, such as jams, alcohols and pickled vegetables, provide fresh produce to local restaurants and shops, and host events ranging from farm-to-table dinners, weekend workshops, to company offsites.
+            </p>
+            {/*<p><b>Now go build something great.</b></p>*/}
           </div>
-          */
-export default missionSection
+
+        </div>
+      </div>
+      <a id="about"></a>
+    </div>
+    </BackgroundImage>
+  )
+}
+
+export default MissionSection

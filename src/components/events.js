@@ -1,52 +1,107 @@
 import React from "react"
-import { ListGroup } from 'react-bootstrap'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from "gatsby-image"
 
-const Events = props => (
-  <div id="events" class="p-5  d-flex align-items-center full-height ">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-md-9">
-          <h1 class="mb-5">Events</h1>
-          <p class="text-justify mb-5">
-            "At vero eos et accusamus et iusto odio dignissimos ducimus qui
-            blanditiis praesentium voluptatum deleniti atque corrupti quos
-            dolores et quas molestias excepturi sint occaecati cupiditate non
-            provident, similique sunt in cListGrouppa qui officia deserunt mollitia
-            animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis
-            est et expedita distinctio. Nam libero tempore, cum soluta nobis est
-            eligendi optio cumque nihil impedit quo minus id quod maxime placeat
-            facere possimus, omnis voluptas assumenda est, omnis dolor
-            repellendus. Temporibus autem quibusdam et aut officiis debitis aut
-            rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint
-            et molestiae non recusandae. Itaque earum rerum hic tenetur a
-            sapiente delectus, ut aut reiciendis voluptatibus maiores alias
-            consequatur aut perferendis doloribus asperiores repellat."
-          </p>
-          <ListGroup variant="flush">
-            <ListGroup.Item style={{backgroundColor: 'transparent'}} class="mb-5">
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            </ListGroup.Item>
-            <ListGroup.Item style={{backgroundColor: 'transparent'}} class="mb-5">
-              "Ut enim ad minim veniam, quis nostrud exercitation ListGrouplamco
-              laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-              dolor in reprehenderit in voluptate velit esse cillum dolore eu
-              fugiat nListGroupla pariatur."
-            </ListGroup.Item>
-            <ListGroup.Item style={{backgroundColor: 'transparent'}} class="mb-5">
-              "Excepteur sint occaecat cupidatat non proident, sunt in cListGrouppa qui
-              officia deserunt mollit anim id est laborum."
-            </ListGroup.Item>
-          </ListGroup>
+
+const Events = () => {
+  
+  const data = useStaticQuery(graphql`
+  query {
+    chessWeekendImg: file(relativePath: {eq: "chessweekend.jpg"}) {
+      childImageSharp {
+          fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    offsite1Img: file(relativePath: {eq: "offsite1.jpg"}) {
+      childImageSharp {
+          fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    offsite2Img: file(relativePath: {eq: "offsite2.jpg"}) {
+      childImageSharp {
+          fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    offsite3Img: file(relativePath: {eq: "offsite3.jpg"}) {
+      childImageSharp {
+          fluid(maxWidth: 800) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`)
+
+  return (
+    
+  <div id="events" className="anchor p-5 d-flex align-items-center full-height ">
+    <div className="container text-center">
+      {/*First Row*/}
+      <div className="row justify-content-center">
+        <div className="col-md-6">
+          <h1 className="mb-3">Events</h1>
+              <hr className="green-divider mt-4 mb-5"></hr>
         </div>
       </div>
+
+      {/*Second Row */}
+      <div className="row justify-content-center">
+      
+        {/*First Column*/}
+        <div className="col-md-5">
+        <div className="event">
+              <h2 className="text-sm-left mb-4 green-subtitle">Farm-to-Table Popup Dinner in Berlin</h2>  
+              <p className="text-sm-left mb-5">
+                A dinner experience from seasonal and regional products home grown and made by Flamingo Kollektiv. 
+              </p>
+            </div>
+            <div className="event">
+              <h2 className="text-sm-left mb-4 green-subtitle">Chess Weekend</h2>  
+              <p className="text-sm-left mb-5">
+              Every year Datscha Fröhden organises a chess weekend for all lovers of the game. Chess lovers of any level spend time playing games in the garden, watching related movies and documents and eating home grown food. 
+              </p>
+              
+            </div>
+        </div>
+
+        {/*Second Column*/}
+          <div className="col-md-5">
+            <div className="event">
+              <h2 className="text-sm-left mb-4 green-subtitle">Offsite Meetings</h2>  
+              <p className="text-sm-left mb-5">
+              Looking for a quiet place outside Berlin, to gather as a team and discuss strategy and ideas? Datscha Fröhden can host teams of up to 20. With a 40m2 room equipped with a projector, and various outdoor undercover spaces, we have the space for your team to unwind and recharge from city life. We can also provide healthy seasonal meals, direct from our garden.   
+              </p>
+              
+            </div>
+
+        </div>
+      </div>
+      
+      {/*Third Row */}
+      <div className="row justify-content-center">
+          <div className="col-md-5">
+          <Img className="mb-5 rounded shadow-sm" fluid={data.chessWeekendImg.childImageSharp.fluid} alt="Chess weekend" /> 
+          <Img className="mb-5 rounded shadow-sm" fluid={data.offsite1Img.childImageSharp.fluid} alt="Offsite 1" />
+          </div>
+          <div className="col-md-5">
+              
+              <Img className="mb-5 rounded shadow-sm" fluid={data.offsite3Img.childImageSharp.fluid} alt="Offsite 3" />
+              <Img className="mb-5 rounded shadow-sm" fluid={data.offsite2Img.childImageSharp.fluid} alt="Offsite 2" />
+          </div>
+      </div>
+
+
     </div>
   </div>
-)
+  
+  )
+}
 
-/* Image with componet:
-          <div class="center-block" style={{ maxWidth: `300px`}}>
-            <Image />
-          </div>
-          */
 export default Events
+

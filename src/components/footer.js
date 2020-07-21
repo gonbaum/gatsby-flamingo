@@ -4,16 +4,16 @@ import { Container } from "react-bootstrap"
 import Instagram from '../assets/svg/instagram.svg'
 
 const Footer = ({ siteTitle }) => (
-    <footer className="black" >
+    <footer className="" style={{backgroundColor: "#1f7272", }} >
     <Container>
-    <div class="d-flex flex-row justify-content-between align-items-center">
+    <div className="d-flex flex-row justify-content-between align-items-center">
       
             
-            <a href="/">© {new Date().getFullYear()},
+            <a href="#">© {new Date().getFullYear()},
             {` `}{siteTitle}</a>
       
       
-            <a href="/"><img src={Instagram}  alt="" class="ig-icon" style={{maxHeight:"2.5rem"}}></img></a>
+            <a href="#"><img src={Instagram}  alt="" className="ig-icon" style={{maxHeight:"2.5rem"}}></img></a>
             </div>
       
     </Container>

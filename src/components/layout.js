@@ -34,7 +34,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    <div className="flexThisBox">
+    <div className="flexThisBox"> {/*We could try content-fluid here too*/}
       <Header siteTitle={data.site.siteMetadata.title} />
       <main>
         <div>{ children }</div>
@@ -58,3 +58,4 @@ Layout.propTypes = {
 }
 
 export default Layout
+

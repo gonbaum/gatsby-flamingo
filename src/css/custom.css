@@ -1,23 +1,38 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');*/
-@import url('//fonts.googleapis.com/css?family=Montserrat:300, 500');
-@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Yantramanav:wght@100;300;400;500;700;900&display=swap');*/
 
-/* * { border: 1px solid black; }*/
+ /*  * { border: 1px solid black; } */
+
+
 
 body {
   margin:0;
   overflow-x: hidden !important;
-  background-color: #fdf3f2;  
+  /*background-color: #fdf3f2;*/
+  background-color: whitesmoke;
   margin: 0px;
   font-size: 1.1rem;
-  color: #512342;
+  /*color: #512342;*/
+  color: black;
 }
 
 .nav-item > a {
     font-size: 1.1rem !important;
+    color: #374f4d !important;
 }
 .nav-item > a:hover {
-   color: #512342!important;
+    color:  #1f7272 !important;
+   /*color: #512342!important;*/
+}
+
+.green-subtitle {
+  color:  #1f7272 !important;
+}
+.about-subtitle {
+  color:  #1f7272 !important;
+  text-decoration: underline;
+}
+.about-subtitle:hover {
+  color:  #374f4d !important;
 }
 
 h1,
@@ -25,18 +40,20 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p,
-a,
-li,
-ul {
-  font-family: "Yantramanav", sans-serif;
-  
+h6
+{
+  font-family: Sofia Sans, Open-sans, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+body {
+  font-family: Open-sans, sans-serif;
 }
 
 h1 {
     font-weight:600;
-    font-size:4rem;
+    font-size:3rem !important;
+    
 }
 
 .koTtll {
@@ -64,6 +81,19 @@ footer {
 }
 
 a {
+  /*color: #512342;*/
+  color: black;
+}
+
+a:hover {
+  /*color: #512342;*/
+  color: black;
+}
+
+footer a {
+  color: whitesmoke;
+}
+footer a:hover {
   color: whitesmoke;
 }
 
@@ -79,14 +109,15 @@ a {
   min-height: 77vh;
 }
 
-#about {
-  padding-top: 10rem !important;
-}
 .mission {
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-radius: 10px;
-  color: whitesmoke !important;
+}
+
+.white-container {
+  background-color: whitesmoke;
+  color: black !important;
 }
 
 .kale-transparent {
@@ -114,6 +145,16 @@ a {
   background-color: #fdf3f2;
 }
 
+.light-green {
+  background-color: #bfe8e7;
+  color: black;
+}
+
+.green-divider {
+  border: 10px solid #1f7272;
+  border-radius: 5px;
+}
+
 .avocado {
   background-color: rgb(103, 98, 50, 0.6);
   color: darkslategray !important;
@@ -129,8 +170,21 @@ a {
 
 #map-container > iframe {
 width:100%;
-height:30vh;
+height:40vh;
 border:0;
 border-radius: 5px;
 }
 
+.container {
+  padding: 0;
+}
+
+.anchor {
+  padding-top: 8rem !important; 
+  margin-top: -8rem !important;
+}
+
+.animate-img:hover {
+  transition: .3s ease-in-out;
+  filter: contrast(100%) brightness(110%);
+}

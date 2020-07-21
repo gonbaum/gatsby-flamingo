@@ -1,38 +1,50 @@
 import React from "react"
-import BasketImg from '../images/baskets/basket.png'
+
 import { ListGroup } from 'react-bootstrap'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from "gatsby-image"
 
-const Baskets = (props) => (
-  <div id="baskets" class="p-5 d-flex align-items-center full-height ">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="mb-5">
-          <h1 class="mb-5">Flamingo Baskets</h1>
-          <img
-                class="mb-5 img-fluid rounded-circle shadow"
-                style={{ maxHeight: "15rem" }}
-                src={BasketImg}
-                alt="wrapkit"
-              />
-        </div>
-        <div class="col-md-9 ">
-        <ListGroup class="shadow-sm">
-            <ListGroup.Item class="mb-5">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua."</ListGroup.Item>
-            <ListGroup.Item class="mb-5">"Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur."</ListGroup.Item>
-            <ListGroup.Item class="mb-5">"Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum."</ListGroup.Item>
-          </ListGroup>
-        </div>
+const Baskets = (props) => {
 
+  const data = useStaticQuery(graphql`
+  query {
+    basketImg: file(relativePath: {eq: "basket.jpg"}) {
+      childImageSharp {
+          fluid(maxWidth: 700) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+  }
+`)
+
+return (
+    <div id="baskets" className="anchor p-5 d-flex align-items-center full-height ">
+      <div className="container text-center">
+        <div className="row justify-content-center">
+          <div className="col-md-6">
+          <div className="mb-5">
+            <h1 className="mb-3">Flamingo Baskets</h1>
+            <hr className="green-divider mt-4 mb-5"></hr>
+            <div className="justify-content-center" style={{margin:"auto"}}>
+            <Img 
+                  className="mb-4 rounded shadow" 
+                  fluid={data.basketImg.childImageSharp.fluid} 
+                  alt="Basket" 
+            />
+            </div>
+            <div className="text-sm-left mt-5">
+          <p>We provide companies Flämingo Baskets for their employees. These baskets contain a mixture of fresh produce, alcohols and pickled products, all from Teltow-Flämingo, Brandenburg. Great goodie for employer branding. </p>
+          </div>
+          </div>
+        
+
+        </div>
+        </div>
       </div>
     </div>
-  </div>
-)
+  )
+}
 
 /* Image with componet:
           <div class="center-block" style={{ maxWidth: `300px`}}>

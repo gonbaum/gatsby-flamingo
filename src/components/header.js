@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { Container, Navbar, Nav } from "react-bootstrap"
 import ScrollToLink from "./ScrollToLink"
+import Logo from '../images/logo3.png'
 
 /* Use Link component from Gatsby combined with bootstrap classes nav-link and active to leverage activeClassName prop of the element that Nav.Link from bootstrap doesn't have*/
 const Header = ({ siteTitle }) => (
@@ -10,10 +11,10 @@ const Header = ({ siteTitle }) => (
       <Navbar expand="md">
         <Navbar.Brand href="/">
           <img
-            src="https://flamingo-pflegeservice.de/wp-content/uploads/2019/07/FLamingo-Logo-Neu.png"
+            src={Logo}
             alt=""
-            width="65rem"
-            height="65rem"
+            
+            height="75rem"
             className="d-inline-block align-top"
           />
         </Navbar.Brand>
@@ -44,14 +45,7 @@ const Header = ({ siteTitle }) => (
                 active="active"
               />
             </Nav.Item>
-            <Nav.Item as="li">
-              <ScrollToLink
-                to="offsites"
-                title="Offsites"
-                classes="nav-link"
-                active="active"
-              />
-            </Nav.Item>
+
             <Nav.Item as="li">
               <ScrollToLink
                 to="baskets"

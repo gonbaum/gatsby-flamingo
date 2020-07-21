@@ -1,23 +1,18 @@
 import React from "react"
-import OffsiteImg from "../images/offsites/offsite.png"
 
 const Offsites = props => (
   <div
     id="offsites"
-    class="p-5 kale-background d-flex align-items-center full-height"
+    className="p-5 kale-background d-flex align-items-center full-height"
   >
-    <div class="container-fluid text-center">
+    <div className="container-fluid text-center">
       <h1 style={{ paddingBottom: "2rem" }}>Offsites</h1>
-      <img
-        class="mb-5 img-fluid rounded shadow-sm"
-        style={{ maxHeight: "15rem"}}
-        src={OffsiteImg}
-        alt="offsite"
+
       />
-      <div class="row justify-content-around">
-        <div class="col-md-3 mb-5 d-flex flex-column  text-justify">
-          <h2 class="text-center mb-4">Offsite 1</h2>
-          <p class="">
+      <div className="row justify-content-around">
+        <div className="col-lg-3 mb-5 d-flex flex-column  text-justify">
+          <h2 className="text-center mb-4">Offsite 1</h2>
+          <p className="">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -27,9 +22,9 @@ const Offsites = props => (
             culpa qui officia deserunt mollit anim id est laborum."
           </p>
         </div>
-        <div class="col-md-3 mb-5 d-flex flex-column text-justify">
-          <h2 class="text-center mb-4">Offsite 2</h2>
-          <p class="">
+        <div className="col-lg-3 mb-5 d-flex flex-column text-justify">
+          <h2 className="text-center mb-4">Offsite 2</h2>
+          <p className="">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -39,9 +34,9 @@ const Offsites = props => (
             culpa qui officia deserunt mollit anim id est laborum."
           </p>
         </div>
-        <div class="col-md-3 col-md-offset-2 mb-5 d-flex flex-column text-justify">
-          <h2 class="text-center mb-4">Offsite 3</h2>
-          <p class="">
+        <div className="col-lg-3 col-md-offset-2 mb-5 d-flex flex-column text-justify">
+          <h2 className="text-center mb-4">Offsite 3</h2>
+          <p className="">
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -57,7 +52,7 @@ const Offsites = props => (
 )
 
 /* Image with componet:
-          <div class="center-block" style={{ maxWidth: `300px`}}>
+          <div className="center-block" style={{ maxWidth: `300px`}}>
             <Image />
           </div>
           */
