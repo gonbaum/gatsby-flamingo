@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Sofia Sans';
+    src: url('SofiaSans-Black.woff') format('woff'),
+         url('SofiaSans-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

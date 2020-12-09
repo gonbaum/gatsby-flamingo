@@ -20,3 +20,5 @@ const addScript = url => {
   }
 
 */
+
+import "./public/static/fonts/fonts.css"

@@ -3,19 +3,25 @@ import React from "react"
 import { Container, Navbar, Nav } from "react-bootstrap"
 import ScrollToLink from "./ScrollToLink"
 import Logo from '../images/logo3.png'
+import LogoSmart from '../images/smart.png'
 
 /* Use Link component from Gatsby combined with bootstrap classes nav-link and active to leverage activeClassName prop of the element that Nav.Link from bootstrap doesn't have*/
 const Header = ({ siteTitle }) => (
   <header className="koTtll shadow-sm">
     <Container>
-      <Navbar expand="md">
+      <Navbar expand="md" style={{paddingBottom: "0", paddingTop: "0"}}>
         <Navbar.Brand href="/">
           <img
             src={Logo}
             alt=""
-            
-            height="75rem"
-            className="d-inline-block align-top"
+            height="65rem"
+            className="d-none d-sm-block align-top"
+          />
+        <img
+            src={LogoSmart}
+            alt=""
+            height="65rem"
+            className="d-sm-none align-top"
           />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarResponsive" />
@@ -49,7 +55,7 @@ const Header = ({ siteTitle }) => (
             <Nav.Item as="li">
               <ScrollToLink
                 to="baskets"
-                title="Baskets"
+                title="Boxes"
                 classes="nav-link"
                 active="active"
               />

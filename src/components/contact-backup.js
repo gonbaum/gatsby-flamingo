@@ -5,6 +5,9 @@ import Home from "../assets/svg/home.svg"
 import Handy from "../assets/svg/phone3.svg"
 
 const Contact = props => (
+
+
+  
   <div id="contact" className="anchor p-5 d-flex align-items-center two-thirds-height ">
     <div className="container-fluid text-center">
       <div className="row justify-content-center">

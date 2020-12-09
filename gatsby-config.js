@@ -4,7 +4,7 @@ module.exports = {
     description: `Flämingo Kollektiv Website`,
     author: `@gonbaum`,
   },
-  pathPrefix: `flamingo`,
+  pathPrefix: `/flamingo`,
   /* run a 'gatsby clean' before deploy. pathPrefix: 'flamingo', FOR DEPLOY, '/flamingo' FOR DEV */
   plugins: [
     `gatsby-plugin-react-helmet`,

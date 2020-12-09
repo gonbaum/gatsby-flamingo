@@ -22,7 +22,7 @@ const Contact = props => (
             <div className="col-md-3 col-12 offset-lg-1 d-flex flex-column text-md-left mb-4">
               <h2 className="green-subtitle mb-3">Address</h2>
               <span>
-                Fröhden/Markendorf
+                Fröhden
                 <br />
                 14913
               </span>
