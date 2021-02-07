@@ -8,7 +8,7 @@ import Linkedin from '../assets/svg/linkedin.svg'
 const Footer = ({ siteTitle }) => (
     <footer className="" style={{backgroundColor: "#1f7272", }} >
     <Container>
-    <div className="d-flex flex-row justify-content-between align-items-center">
+    <div className="d-flex flex-row justify-content-between align-items-lg-center">
       
             
             <div className="justify-content-left">
@@ -19,9 +19,9 @@ const Footer = ({ siteTitle }) => (
             </Link>
             </div>
 
-            <div className="justify-content-center">
+            <div className="d-flex flex-row">
             <a href="https://www.instagram.com/flaemingo_farm/?hl=en"><img src={Instagram}  alt="" className="ig-icon" style={{maxHeight:"2.5rem", marginRight:"1rem"}}></img></a>
-            <a href="https://www.linkedin.com/company/flaemingo-kollektiv/"><img src={Linkedin}  alt="" className="ig-icon" style={{maxHeight:"2.5rem"}}></img></a>
+            <a href="https://www.linkedin.com/company/flaemingo-kollektiv/"><img src={Linkedin}  alt="" className="ig-icon" style={{maxHeight:"2.5rem", marginRight:"1rem"  }}></img></a>
             </div>
             </div>
       

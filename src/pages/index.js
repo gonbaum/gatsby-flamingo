@@ -6,7 +6,6 @@ import Events from "../components/events"
 import Contact from "../components/contact"
 import Baskets from "../components/baskets"
 import SEO from "../components/seo"
-import Instagram from "../components/instagram"
 
 const IndexPage = () => (
   <Layout>

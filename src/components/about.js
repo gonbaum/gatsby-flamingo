@@ -55,7 +55,7 @@ const About = props => {
               <div className="col-md-12 text-center">
                 <div className="pt-2">
                   <h5 className="mt-4 font-weight-bold mb-0">Artur + Thanh</h5>
-                  <a href="https://www.datscha-froehden.de" target="_blank">
+                  <a href="http://www.datscha-froehden.de" target="_blank">
                     <h6 className="about-subtitle">Datscha Fröhden</h6>
                   </a>
                   <p className="text-sm-left team4">

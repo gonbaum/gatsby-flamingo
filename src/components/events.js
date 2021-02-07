@@ -78,7 +78,7 @@ const Events = () => {
               <p className="text-sm-left mb-5">
                 Every year Datscha Fröhden organises a chess weekend for all
                 lovers of the game. Chess lovers of any level spend time playing
-                games in the garden, watching related movies and documents and
+                games in the garden, watching related movies and documentaries and
                 eating home grown food.
               </p>
             </div>

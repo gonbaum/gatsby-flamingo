@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 import FontUrl1 from "../../public/static/fonts/SofiaSans-Black.otf"
+import OcImage from '../images/ocimg.jpg'
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -21,7 +22,7 @@ function SEO({ description, lang, meta, title }) {
             description
             author
           }
-        }
+        }                                                                                             
       }
     `
   )
@@ -66,6 +67,10 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:description`,
+          content: metaDescription,
+        },
+        {
+          name: OcImage,
           content: metaDescription,
         },
       ].concat(meta)}

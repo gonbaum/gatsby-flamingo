@@ -92,8 +92,8 @@ const Baskets = props => {
               </div>
               <div className="text-sm-left mt-4">
                 <p>
-                  Small: 36 euros. <br />4 jams/chutneys + 1 jar of pickled veg
-                  + 1 liqueur.
+                  Small: 36 euros <br />4 jams/chutneys + 1 jar of pickled veg
+                  + 1 liqueur
                 </p>
               </div>
             </div>
@@ -115,8 +115,8 @@ const Baskets = props => {
               </div>
               <div className="text-sm-left mt-4">
                 <p>
-                  Medium: 52 euros. <br />5 jams/chutneys + 2 pickled veg or
-                  soup + 2 liqueurs.{" "}
+                  Medium: 52 euros <br />5 jams/chutneys + 2 pickled veg or
+                  soup + 2 liqueurs{" "}
                 </p>
               </div>
             </div>
@@ -145,8 +145,8 @@ const Baskets = props => {
               </div>
               <div className="text-sm-left mt-4">
                 <p>
-                  Large: 70 euros. <br />6 jams/chutneys + 2 pickled veg or soup
-                  + 2 liqueurs + 1 wine.{" "}
+                  Large: 70 euros <br />6 jams/chutneys + 2 pickled veg or soup
+                  + 2 liqueurs + 1 wine{" "}
                 </p>
               </div>
             </div>

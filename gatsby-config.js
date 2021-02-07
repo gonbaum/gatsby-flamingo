@@ -4,8 +4,17 @@ module.exports = {
     description: `Flämingo Kollektiv Website`,
     author: `@gonbaum`,
   },
-  pathPrefix: `/flamingo`,
-  /* run a 'gatsby clean' before deploy. pathPrefix: 'flamingo', FOR DEPLOY, '/flamingo' FOR DEV */
+  pathPrefix: `/`,
+  /* run a 'gatsby clean' before deploy. pathPrefix: 'flamingo' or just '/' FOR DEPLOY, use '/flamingo' FOR DEV */
+
+  /* For deploying:
+  /* 1- Run gatsby clean
+  /* 2- yarn run deploy
+  /* 3- add fonts folder if it's not added to complete build
+  /* 4- once deployed add to root CNAME file with 'flaemingo.de'
+  /* 5- if it doesnt work at flaemingo.de but yes at flaemingo.de/index.html, add a file named .nojekyll to the root */
+
+  
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-transformer-sharp`,
