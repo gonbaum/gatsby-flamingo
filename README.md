@@ -7,6 +7,5 @@ At the Flaemingo project, they grow organic food using permaculture principles a
 
 This are the first website sketches I made with Photoshop ,according to the notes and paper wireframes submited by the client and their designer:
 
-![Photoshop Sketch](readme/wireframe-center.png
-)
+![Photoshop Sketch](readme/wireframe-center.png)
 
